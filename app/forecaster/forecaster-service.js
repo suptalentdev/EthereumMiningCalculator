@@ -48,7 +48,7 @@ angular.module('ethMiningCalc')
       },
       "complexityType": {
         def: {
-          title: "Basic (Automatically choose options)",
+          title: "Basic (Automaticly choose options)",
           code: "default"
         },
         custom: {
