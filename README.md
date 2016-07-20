@@ -1,7 +1,7 @@
 # EthereumMiningCalculator
 Advanced Statistics for Mining Ethereum and other Cryptocurrencies.
 
-Available at: [www.TheCalc.io](www.thecalc.io)
+Available at: [www.TheCalc.io](https://thecalc.io)
 
 This project is still under development, there may be bugs.
 
