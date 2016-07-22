@@ -1,34 +1,71 @@
 # EthereumMiningCalculator
-Advanced Statistics for Mining Ethereum and other Cryptocurrencies.
 
-Available at: [www.TheCalc.io](https://thecalc.io)
+Advanced statistics for mining ethereum and other cryptocurrencies.
 
-This project is still under development, there may be bugs.
+## Single-Page AngularJS Web Application
+
+This is a single-page AngularJS app. You can access a hosted version at [thecalc.io](https://thecalc.io).
+
+You can also download/clone this repository and host your very own development server using Node.js.
+
+> This project is still under development, please report bugs by creating [issues](https://github.com/AgeManning/EthereumMiningCalculator/issues).
 
 
 ## Getting Started
 
-_I haven't tested these setup commands. There may be extra steps, but it should be straight-forward._
+Ensure you have [Node.js](https://nodejs.org/en/) installed. 
 
-1. Install node.js. I reccomend using [nvm](https://github.com/creationix/nvm) so you can switch between
-node versions easily (not required for this project).
-2. Install bower globally `$ npm install -g bower`
-3. Install grunt globally `$ npm install -g grunt-cli`
-4. Switch to the project dir and do an npm install `$ npm install`
-5. Run the build script and launch the server with npm `$ npm start`
-6. _..._
-7. Profit
+> I reccomend installing node with [nvm](https://github.com/creationix/nvm). It allows you to switch easily between node versions. Whilst not required, it's worth the effort.
 
-## What does what?
+Enter the following commands in your terminal:
 
-#### Node.js
-We use node.js to run helpful dev packages, like the ones listed below. No actual node.js coding is required.
+``` bash
+$ git clone https://github.com/AgeManning/EthereumMiningCalculator.git
+$ cd EthereumMiningCalculator
+$ npm install -g npm    # Update npm.
+$ npm install -g bower    # Install bower.
+$ npm install -g grunt-cli    # Install grunt.
+$ npm install    # Install the local development dependencies.
+```
 
-#### Bower
-Bower manages third-party dependencies. Eg, Want to install highcharts? `bower install --save highcharts`. Highcharts
-will then be loaded in bower_components and the grunt script will automatically load its script and link tags
+Finally, Use Chrome to navigate to your new server at [localhost](http://localhost:9001) (or [loopback](http:127.0.0.1:9001))
+
+
+## Third-party Components
+
+### Angular.js
+
+#### [AngularJS](https://angularjs.org/)
+
+This is an [AngularJS](https://angularjs.org/), HTML, JS and CSS single-page web-app without it's own "backend" server. (We do however use online third-party APIs).
+
+### Third-party APIs
+
+* [Poloniex](https://poloniex.com/)
+
+We use the Poloniex API to determine current exchange rates.
+
+* [Bitpay](https://bitpay.com/)
+
+We also use the Bitpay API to determine further current exchange rates.
+
+
+* [etherchain.org](https://etherchain.org/)
+
+The etherchain.org API supplies us with various current blockchain stats including difficulty, block time, hash rate, current block number
+
+
+### Development
+
+* [Node.js](https://nodejs.org/en/)
+
+We use node.js to run helpful scripts whilst we're developing. Not required for production. (No actual node.js coding is required).
+
+* [Bower](https://bower.io/)
+
+Bower manages third-party dependencies. Eg, Want to install highcharts? `bower install --save highcharts`. Highcharts will then be loaded in bower_components and the grunt script will automatically load its script and link tags
 to our index.html.
 
-#### Grunt
-Grunt does menial tasks. Grunt automatically inserts script and link tags (from bower_components and the app folder)
-into our index.html and then runs a html server on localhost:9001
+* [Grunt](http://gruntjs.com/)
+
+Grunt does menial tasks. Grunt automatically inserts script and link tags (from bower_components and the app folder) into our index.html and then runs a html server on localhost:9001
