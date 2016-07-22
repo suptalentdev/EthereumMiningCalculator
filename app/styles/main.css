@@ -73,3 +73,27 @@ footer {
 .btn-wide {
   min-width: 200px;
 }
+
+
+/* fix for footer problem on small screens and mobiles */
+
+@media (max-width: 768px) {
+  footer {
+    height: 85px;
+  }
+
+  body {
+    margin-bottom: 85px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  footer {
+    height: 65px;
+  }
+
+  body {
+    margin-bottom: 65px;
+  }
+}
+
+/* end fix */
